@@ -65,3 +65,10 @@ A cursor created with one `secret` will fail verification under another with
 ## Node only
 
 Uses `node:crypto` for HMAC. Not browser-compatible.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
