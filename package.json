@@ -1,6 +1,6 @@
 {
   "name": "cursor-page",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "page cursors that are sealed against forgery",
   "type": "module",
   "main": "src/index.js",
